@@ -53,47 +53,53 @@ body {
     color: var(--main-bg-color)
 }
 
-
 /****** Header ***********/
 
 /* redimensionner le logo */
-header img{
+header img {
     padding: 30px 50px 30px 50px;
-    width: 61.09px; 
+    width: 61.09px;
     height: 19px;
 }
 
-/* aligner les élements de menu à droite et le logo à gauche */
-header{
+/* aligner les élements de menu en haut à droite 
+et le logo au centre à gauche */
+header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
-/* supprimer les puces et les marges des listes et aligner les éléments de la liste du menu*/
-ul{
+/* supprimer les puces et le retrait à droite des listes 
+et aligner les éléments de la liste du menu en ligne */
+
+ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+    padding: 0; /* padding right par défaut = 40px */
+    display: flex; /* en colonne par défaut  */
 }
 
-/* écarter les éléments du menu selon le figma */
-li{    
-    padding: 0px 50px; 
+/* écart entre les éléments du menu selon le figma */
+li {
+    margin: 0px 50px;
 }
 
 /* supprimer le soulignement et la couleur bleu des liens du menu */
 nav a {
-color: #000000;
-text-decoration: none;
+    color: #000000;
+    text-decoration: none;
 }
 
 /* au survol, changement de couleur et apparition d'un trait bleu */
-nav a:hover{
+nav a:hover {
     color: #0065FC;
     border-top: solid 2px #0065FC;
-    padding-top: 15px;
+    padding-top: 10px;
+}
+
+/* supprimer la marge pour que les éléments colle le haut de la page*/
+body{
+    margin-top: 0;
 }
 
 /****** Hebergements And Populaires ***********/
