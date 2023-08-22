@@ -162,6 +162,18 @@ margin-bottom: 0;
     border-top-right-radius: 20px;
 }
 
+/* apparence du contenu des cartes */
+
+.hebergements-cards .card-title {
+    margin: 8px 0px 8px 0px;
+    padding: 0;
+}
+
+.hebergements-cards .card-subtitle {
+    margin: 0;
+    margin-bottom: 8px;
+}
+
 /****** Populaires ***********/
 .populaires {
     width: 32%;
