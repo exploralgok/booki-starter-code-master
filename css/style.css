@@ -57,12 +57,12 @@ body {
 
 /* redimensionner le logo */
 header img {
-    padding: 30px 50px 30px 50px;
+    padding: 30px 50px 30px 0px;
     width: 61.09px;
     height: 19px;
 }
 
-/* aligner les élements de menu en haut à droite 
+/* aligner les élements de menu en haut à droite
 et le logo au centre à gauche */
 header {
     display: flex;
@@ -70,7 +70,7 @@ header {
     align-items: flex-start;
 }
 
-/* supprimer les puces et le retrait à droite des listes 
+/* supprimer les puces et le retrait à droite des listes
 et aligner les éléments de la liste du menu en ligne */
 
 ul {
@@ -100,6 +100,51 @@ nav a:hover {
 /* supprimer la marge pour que les éléments colle le haut de la page*/
 body{
     margin-top: 0;
+}
+
+/****** Informations ***********/
+
+.info .fa-solid{
+    margin: 15px 15px 15px 0px;
+}
+
+.info-filter{
+    display: flex;
+}
+
+.filter-title{
+    margin:15px 15px 15px 0px;
+    align-self: center;
+
+}
+
+.filter {
+    display: flex;
+    border:solid 2px #D9D9D9;
+    border-radius: 40px;
+    margin:15px 15px 15px 0px;
+    padding: 0px 15px 0px 15px;
+}
+
+.filter .p{
+    margin: 4px 0px 4px 0px;
+}
+
+.info-infobar{
+    display: flex;
+}
+
+.fa-info{
+    border-radius: 50%;
+    border : 1px solid #D9D9D9;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* ne fonctonne pas sans redeclaer le flex meme avec self */
+
 }
 
 /****** Hebergements And Populaires ***********/
@@ -150,7 +195,7 @@ margin-bottom: 0;
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box; */
-    padding: 0px  0px 15px 15px;
+    padding: 0px 0px 15px 15px;
 
 }
 
@@ -177,6 +222,7 @@ margin-bottom: 0;
 /****** Populaires ***********/
 .populaires {
     width: 32%;
+    padding-bottom: 15px;
 }
 
 .populaires-title {
