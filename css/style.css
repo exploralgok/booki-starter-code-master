@@ -77,11 +77,19 @@ ul {
     list-style-type: none;
     padding: 0; /* padding right par défaut = 40px */
     display: flex; /* en colonne par défaut  */
+    margin: 0;
 }
+
+/* nav{
+    height: 100%;
+} */
 
 /* écart entre les éléments du menu selon le figma */
 li {
-    margin: 0px 50px;
+    margin-right: 50px;
+    padding-top: 14px;
+    border-top: solid 2px transparent;
+
 }
 
 /* supprimer le soulignement et la couleur bleu des liens du menu */
@@ -91,11 +99,12 @@ nav a {
 }
 
 /* au survol, changement de couleur et apparition d'un trait bleu */
-nav a:hover {
-    color: #0065FC;
+
+li:hover {
     border-top: solid 2px #0065FC;
-    padding-top: 10px;
+    /* padding-top: 10px; */
 }
+
 
 /* supprimer la marge pour que les éléments colle le haut de la page*/
 body{
@@ -143,7 +152,8 @@ body{
     justify-content: center;
     align-items: center;
 
-    /* ne fonctonne pas sans redeclaer le flex meme avec self */
+    /* ne fonctonne pas sans redeclaer le flex
+    ds la balise enfant meme avec self */
 
 }
 
