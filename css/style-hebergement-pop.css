@@ -32,6 +32,7 @@
     flex-direction: column;
     margin-top: 30px;
     width: 30%;
+    margin-right:30px;
 }
 
 .afficher-plus {
@@ -74,6 +75,7 @@
 .populaires {
     width: 32%;
     padding-bottom: 15px;
+    margin-left:40px;
 }
 
 .populaires-title {
