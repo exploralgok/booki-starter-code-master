@@ -11,25 +11,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/css/style.css">
+    <!-- <link rel="stylesheet" href="/css/style.css"> -->
+    <link rel="stylesheet" href="/css/style-general.css">
+    <link rel="stylesheet" href="/css/style-header.css">
+    <link rel="stylesheet" href="/css/style-hebergement-pop.css">
+    <link rel="stylesheet" href="/css/style-info.css">
+
+
+
+
 </head>
 
 <body>
 
     <div class="main-container">
-        <header>
+        <header class="header">
 
             <!-- LOGO -->
 
-            <img src="/images/logo/Booki.png" alt="logo booki">
+            <img class="logo" src="/images/logo/Booki.png" alt="logo booki">
 
             <!-- MENU -->
-            <nav>
+            <nav class="menu">
                 <ul>
-                    <li>
+                    <li class="lien-hebergement">
                         <a href="#hebergements">Hébergements</a>
                     </li>
-                    <li> <a href="#activites">Activités</a>
+                    <li class="lien-activites"> <a href="#activites">Activités</a>
                     </li>
                 </ul>
             </nav>
@@ -38,53 +46,53 @@
 
             <!-- INFORMATIONS -->
             <section class="info">
-<div class="info-headline">
-                <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-                <p>En plein centre-ville ou en pleine nature</p>
-            </div>
-
-            <div class="info-search">
-
-                <form action="" method="">
-
-                    <label for="ville"><i class="fa-solid fa-location-dot"></i></label>
-                    <input type="search" name="ville" id="ville">
-                    <input type="submit" value="Rechercher">
-
-                </form>
-
-            </div>
-
-            <div class="info-filter">
-                <div class="filter-title">Filtres</div>
-                <div class="filter">
-                    <i class="fa-solid fa-money-bill-wave"></i>                    
-                    <p>Economique</p>
-                </div>
-                <div class="filter">
-                    <i class="fa-solid fa-person"></i>
-                    <p>Familial</p>
-                </div>
-                <div class="filter">
-                    <i class="fa-solid fa-heart"></i>
-                    <p>Romantique</p>
-                </div>
-                <div class="filter">
-                    <i class="fa-solid fa-fire"></i>
-                    <p>Nos pépites</p>
+                <div class="info-headline">
+                    <h2 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h2>
+                    <p class="description">En plein centre-ville ou en pleine nature</p>
                 </div>
 
-            </div>
+                <div class="info-search-bar">
+
+                    <form action="" method="">
+
+                        <label for="ville"><i class="fa-solid fa-location-dot"></i></label>
+                        <input type="search" name="ville" id="ville">
+                        <input type="submit" value="Rechercher">
+
+                    </form>
+
+                </div>
+
+                <div class="info-filter">
+                    <div class="filter-title">Filtres</div>
+                    <div class="filter">
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                        <p>Economique</p>
+                    </div>
+                    <div class="filter">
+                        <i class="fa-solid fa-person"></i>
+                        <p>Familial</p>
+                    </div>
+                    <div class="filter">
+                        <i class="fa-solid fa-heart"></i>
+                        <p>Romantique</p>
+                    </div>
+                    <div class="filter">
+                        <i class="fa-solid fa-fire"></i>
+                        <p>Nos pépites</p>
+                    </div>
+
+                </div>
 
 
-            <div class="info-infobar">
+                <div class="info-infobar">
 
-                <!-- icone -->
-                <i class="fa-solid fa-info"></i>
-                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                    <!-- icone -->
+                    <i class="fa-solid fa-info fa-xs"></i>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
 
 
-            </div>
+                </div>
 
 
             </section>
@@ -94,7 +102,7 @@
                 <section class="hebergements">
 
                     <h2 class="section-title">Hébergements à Marseille</h2>
-                    
+
                     <div class="hebergements-cards">
                         <article class="card">
                             <img src="./images/hebergements/fred-kleber.jpg"
@@ -209,7 +217,7 @@
                             </div>
                         </article>
                     </div>
-                    
+
                     <h3 class="afficher-plus">Afficher plus</h3>
 
                 </section>

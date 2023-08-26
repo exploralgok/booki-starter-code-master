@@ -1,0 +1,66 @@
+/****** Header ***********/
+
+/* supprimer la marge pour que les éléments colle le haut de la page*/
+body {
+    margin-top: 0;
+}
+
+/* aligner les élements de menu en haut à droite
+et le logo au centre à gauche */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+/* redimensionner le logo */
+.logo {
+    padding: 30px 50px 30px 0px;
+    width: 61.09px;
+    height: 19px;
+}
+
+/* supprimer les puces et le retrait à droite des listes
+et aligner les éléments de la liste du menu en ligne */
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    /* car padding right par défaut = 40px */
+    display: flex;
+    /* car en colonne par défaut  */
+    margin: 0;
+}
+
+/* écart entre les éléments du menu selon le figma */
+.menu li {
+    padding-top: 14px; 
+    /* pour créer l'espace entre le nom du lien et la bordure */
+    border-top: solid 2px transparent; 
+    /* pour éviter le décalage lors du survol */
+}
+
+.lien-hebergement {
+    margin-right: 34px;
+    margin-left: 50px;
+}
+
+.lien-activites {
+    margin-left: 34px;
+}
+
+/* au survol, changement de couleur et apparition d'un trait bleu */
+.menu li:hover {
+    border-top: solid 2px #0065FC;
+    /* padding-top: 10px; */
+}
+
+/* supprimer le soulignement et la couleur bleu des liens du menu */
+.menu a {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+

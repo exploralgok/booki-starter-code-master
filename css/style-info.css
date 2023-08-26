@@ -1,0 +1,67 @@
+/****** Informations ***********/
+
+.description{
+    margin-top:8px;
+    margin-bottom: 35px;
+}
+
+.info .info-search-bar label{
+    background-color: #F2F2F2;
+}
+.info .fa-solid {
+    margin-right: 10px;
+}
+
+.info-filter {
+    display: flex;
+    margin: 35px 0px;
+}
+
+.filter-title {
+    margin: 15px 15px 15px 0px;
+    align-self: center;
+
+}
+
+.info-filter .filter {
+    display: flex;
+    align-items: center;
+    border: solid 2px #D9D9D9;
+    border-radius: 40px;
+    margin-right: 15px;
+    padding: 4px 19px;
+}
+
+.filter-title{
+font-size: 18px;
+font-weight: 700;
+}
+
+.info-filter .filter p {
+    margin: 0;
+    font-weight: 700;
+}
+
+.info-infobar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.info .info-infobar .fa-info {
+    border-radius: 50%;
+    border: 1px solid #D9D9D9;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* pas de self car info n'est pas flex*/
+
+}
+
+.info-infobar p{
+    margin:0;
+}
+
