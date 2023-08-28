@@ -15,13 +15,20 @@
 
 body {
     display: flex;
-    justify-content: center;}
+    justify-content: center;
+/* supprimer la marge pour que les éléments colle le haut de la page*/
+    margin-top: 0;
+}
 
 .main-container {
     width: 100%;
-    max-width: 1440px;
+    /* éviter d’étirer la page web sur la largeur de façon excessive */
+    max-width: 1440px; 
+    /* En-deçà de cette largeur des versions tablette/mobile seront mises en place ultérieurement */
     min-width: 1025px;
-    padding: 0 50px;
+/* le header et le footer touchent le bord de la page
+les cotés ont un paadding de 50  */
+    padding: 0px 50px;
     box-sizing: border-box;
 }
 

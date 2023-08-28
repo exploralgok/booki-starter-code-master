@@ -1,66 +1,72 @@
 /****** Header ***********/
 
-/* supprimer la marge pour que les éléments colle le haut de la page*/
-body {
-    margin-top: 0;
-}
-
 /* aligner les élements de menu en haut à droite
 et le logo au centre à gauche */
 
 .header {
+    /* alignement en ligne des éléments */
     display: flex;
+    /* repartition logo et nav avec nav à droite */
     justify-content: space-between;
-    align-items: flex-start;
     margin-bottom: 30px;
 }
 
 /* redimensionner le logo */
-.logo {
+.header .logo {
+    /* pas besoin de padding à gauche 
+    car il est déjà dans main container */
     padding: 30px 50px 30px 0px;
-    width: 61.09px;
+    /* on choisit soit width soit height, 
+    l'autre s'ajuste automatiquement */
     height: 19px;
 }
 
 /* supprimer les puces et le retrait à droite des listes
 et aligner les éléments de la liste du menu en ligne */
-.menu ul {
+.header .menu .liste-lien {
     list-style-type: none;
+    /* padding right par défaut = 40px */
     padding: 0;
-    /* car padding right par défaut = 40px */
+    /* en colonne par défaut  */
     display: flex;
-    /* car en colonne par défaut  */
+    /* margin par défaut = 16px*/
     margin: 0;
 }
 
 /* écart entre les éléments du menu selon le figma */
-.menu li {
+.header .menu .liste-lien .lien {
+        /* pour créer l'espace entre le nom du lien et la bordure */
+
     padding-top: 14px; 
-    /* pour créer l'espace entre le nom du lien et la bordure */
+        /* pour éviter le décalage lors du survol */
+
     border-top: solid 2px transparent; 
-    /* pour éviter le décalage lors du survol */
 }
 
-.lien-hebergement {
+/* au survol, apparition d'un trait bleu */
+.header .menu .liste-lien .lien:hover {
+    border-top: solid 2px #0065FC;
+}
+
+
+/* écart entre les éléments du menu selon le figma */
+.header .menu .liste-lien #lien-hebergement {
     margin-right: 34px;
     margin-left: 50px;
 }
 
-.lien-activites {
+/* écart entre les éléments du menu selon le figma */ 
+.header .menu .liste-lien #lien-activites {
     margin-left: 34px;
 }
 
-/* au survol, changement de couleur et apparition d'un trait bleu */
-.menu li:hover {
-    border-top: solid 2px #0065FC;
-    /* padding-top: 10px; */
-}
-
 /* supprimer le soulignement et la couleur bleu des liens du menu */
-.menu a {
+.header .menu .liste-lien .lien a {
     color: #000000;
     text-decoration: none;
 }
 
-
-
+/* au survol, lien en bleu */
+.header .menu .liste-lien .lien a:hover {
+    color: #0065FC;
+}
