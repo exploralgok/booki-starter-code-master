@@ -1,12 +1,12 @@
 /****** Informations ***********/
 
-/* HEADLINE */
+/********************** HEADLINE **********************/
 
 .info .info-headline .description {
     margin-top: 8px;
 }
 
-/* SEARCH BAR */
+/********************** SEARCH BAR **********************/
 
 /* container de l'icone dans la barre de recherche */
 .info .info-search-bar .label {
@@ -42,6 +42,7 @@
     border-radius: 0px 15px 15px 0px;
     color: #FFFFFF;
     border-color: #0065FC;
+    font-size: 18px;
 
 }
 
@@ -51,7 +52,7 @@ input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration { display: none; }
 
-/* FILTRE */
+/********************** FILTRE **********************/
 
 .info .info-filter .filter-title {
     /* si je ne mets pas de padding, les bulles sont petites (pas sur la maquette) */
@@ -79,7 +80,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     margin-right: 10px;
 }
 
-/* INFOBAR */
+.info .info-filter .filter .label-filter {
+    font-size: 17px;
+}
+
+/********************** INFOBAR **********************/
 
 /* aligner icone et texte 
 center element */
