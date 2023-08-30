@@ -35,12 +35,10 @@ et aligner les éléments de la liste du menu en ligne */
 
 /* écart entre les éléments du menu selon le figma */
 .header .menu .liste-lien .lien {
-        /* pour créer l'espace entre le nom du lien et la bordure */
-
-    padding-top: 14px; 
-        /* pour éviter le décalage lors du survol */
-
-    border-top: solid 2px transparent; 
+    /* pour créer l'espace entre le nom du lien et la bordure */
+    padding-top: 14px;
+    /* pour éviter le décalage lors du survol */
+    border-top: solid 2px transparent;
 }
 
 /* au survol, apparition d'un trait bleu */
@@ -55,7 +53,7 @@ et aligner les éléments de la liste du menu en ligne */
     margin-left: 50px;
 }
 
-/* écart entre les éléments du menu selon le figma */ 
+/* écart entre les éléments du menu selon le figma */
 .header .menu .liste-lien #lien-activites {
     margin-left: 34px;
 }
