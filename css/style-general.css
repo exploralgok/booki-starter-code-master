@@ -20,10 +20,15 @@ body {
     margin-top: 0;
 }
 
+/* on n'utilise pas les valeurs par défaut dans la page (haut et bas) */
+p{
+    margin: 0;
+}
+
 .main-container {
     width: 100%;
     /* éviter d’étirer la page web sur la largeur de façon excessive */
-    max-width: 1440px; 
+    max-width: 1440px;
     /* En-deçà de cette largeur des versions tablette/mobile seront mises en place ultérieurement */
     min-width: 1025px;
 /* le header et le footer touchent le bord de la page
@@ -58,6 +63,23 @@ les cotés ont un paadding de 50  */
 
 .neutral-star {
     color: var(--main-bg-color)
+}
+
+.space-btw-l{
+    margin-bottom: 35px;
+}
+
+.space-btw-s{
+    margin-bottom: 30px;
+}
+
+.center-element{
+    display: flex;
+    align-items: center;
+}
+
+.direction-row{
+    display: flex;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */

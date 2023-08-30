@@ -8,7 +8,6 @@ et le logo au centre à gauche */
     display: flex;
     /* repartition logo et nav avec nav à droite */
     justify-content: space-between;
-    margin-bottom: 30px;
 }
 
 /* redimensionner le logo */

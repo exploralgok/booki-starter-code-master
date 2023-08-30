@@ -4,14 +4,9 @@
 
 .info .info-headline .description {
     margin-top: 8px;
-    margin-bottom: 35px;
 }
 
 /* SEARCH BAR */
-
-form {
-    display: flex;
-}
 
 /* container de l'icone dans la barre de recherche */
 .info .info-search-bar .label {
@@ -19,64 +14,60 @@ form {
     height: 49px;
     width: 50px;
     border-radius: 15px 0px 0px 15px;
-    border: 1px solid #F2F2F2;
+    border-color: #F2F2F2;
     /* centrer l'icone */
-    display: flex;
     justify-content: center;
-    align-items: center;
+
 }
 
 .info .info-search-bar .label .fa-location-dot {
     color: #000000;
-    margin: 0;
 }
 
 .info .info-search-bar .field {
-    font-weight: 700;
     padding: 0px 24px;
-    border: 1px solid #F2F2F2;
+    border-color: #F2F2F2;
+    font-size: 18px;
 }
 
+/* suppression du cadre bleue */
+.info .info-search-bar .field:focus {
+    outline: none;
+}
+
+/* bouton rechercher */
 .info .info-search-bar .search {
     background-color: #0065FC;
     padding: 15px 16px;
     border-radius: 0px 15px 15px 0px;
     color: #FFFFFF;
-    border: 1px solid #0065FC;
+    border-color: #0065FC;
 
 }
+
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 /* FILTRE */
 
-.info .info-filter {
-    display: flex;
-    margin: 35px 0px;
-}
-
 .info .info-filter .filter-title {
-    /* si je ne le mets pas les bulles sont petites */
-    margin: 15px 15px 15px 0px; 
+    /* si je ne mets pas de padding, les bulles sont petites (pas sur la maquette) */
+    padding: 15px 0px;
     margin-right: 15px;
-    align-self: center;
     font-size: 18px;
-    font-weight: 700;
 }
 
 .info .info-filter .filter {
     /* pourquoi ne prends pas le flex de son parent ? 
     peut pas utiliser self */
-    /* pour aligner l'icone eet le texte*/
-    display: flex;
-    align-items: center;
-    border: solid 2px #D9D9D9;
+    /* pour aligner l'icone et le texte*/
+    border: 2px solid #D9D9D9;
     border-radius: 40px;
     margin-right: 15px;
     padding: 4px 19px;
-}
-
-.info .info-filter .filter p {
-    margin: 0;
-    font-weight: 700;
 }
 
 .info .info-filter .filter:hover {
@@ -90,26 +81,26 @@ form {
 
 /* INFOBAR */
 
-.info .info-infobar {
-    display: flex;
-    align-items: center;
-    margin-bottom: 35px;
-}
+/* aligner icone et texte 
+center element */
 
-/* icone */
+
+/* aligner icone et cercle */
 .info .info-infobar .fa-info {
     border-radius: 50%;
-    border: 1px solid #D9D9D9;
     width: 24px;
     height: 24px;
-    display: flex;
     justify-content: center;
-    align-items: center;
     margin-right: 10px;
+    border-color: #D9D9D9;
 
     /* pas de self car info n'est pas flex*/
 }
 
-.info .info-infobar p {
-    margin: 0;
+.border-line {
+    border: 1px solid
+}
+
+.bold {
+    font-weight: 700;
 }
