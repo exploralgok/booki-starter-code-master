@@ -1,53 +1,56 @@
-/****** Hebergements And Populaires ***********/
+/****** Hebergements et Populaires ***********/
 
-
-.hebergements-and-populaires {
-    display: flex;
-    justify-content: space-between;
-}
-
-.hebergements-and-populaires section {
+.accomodation-and-popular section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
-    box-sizing: border-box;
+    /* prise en comtpe des bordures dans le positionnement */
+    /* box-sizing: border-box; */
+}
+
+
+/* .accomodation{
+        justify-content: space-between;
+        /* pourquoi le flex parent ne s'applique pas sur l'enfant ?
+} */
+
+.accomodation-and-popular a {
+    color: #000000;
+    text-decoration: none;
 }
 
 /****** Hebergements ***********/
-.hebergements {
+.accomodation {
     width: 65%;
 }
 
 /* ajuster la taille de la carte */
-
 .hebergements-cards {
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+}
+
+.hebergements-cards a {
+    /* chaque  élément de la section doit faire au moins 250px de large */
+    flex: 250px;
+    /* quand je mets dans article il n'enlève pas la dernière marge */
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+/* le dernier élément de chaque ligne doit avoir une marge de zéro */
+.hebergements-cards a:nth-of-type(3n) {
+    margin-right: 0;
+}
+
+.hebergements-cards a:nth-of-type(3n) {
+    margin-right: 0;
 }
 
 .hebergements-cards .card {
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
-    width: 30%;
-    /* margin-right:30px; */
-}
-
-.afficher-plus {
-    margin-top: 30px;
-    margin-bottom: 0;
-}
-
-/* ajuster l'écart entre les lignes de contenu */
-.hebergements-cards .card-content {
-    /* width: 67%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box; */
-    padding: 0px 0px 15px 15px;
+    /* prend la largeur de mon a */
+    width: 100%;
 
 }
 
@@ -57,65 +60,79 @@
     height: 124px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    margin-bottom: 4px;
+    border: 5px solid #FFFFFF;
+    /* box-sizing: border-box; */
+}
+
+/* ajuster l'écart entre les lignes de contenu */
+.hebergements-cards .card-content {
+    padding: 0px 15px 15px 15px;
+
 }
 
 /* apparence du contenu des cartes */
 
 .hebergements-cards .card-title {
-    margin: 8px 0px 8px 0px;
-    padding: 0;
+    margin-top: 0;
+    margin-bottom: 8px;
 }
 
 .hebergements-cards .card-subtitle {
-    margin: 0;
     margin-bottom: 8px;
+}
+
+
+.afficher-plus {
+    font-size: 18px;
+    /* margin-bottom: 0; */
 }
 
 /****** Populaires ***********/
 .populaires {
     width: 32%;
-    padding-bottom: 15px;
-    margin-left:40px;
+    margin-left: 40px;
 }
 
 .populaires-title {
-    display: flex;
     justify-content: space-between;
-    align-items: center;
+}
+
+
+.populaires-cards a {
+    margin-bottom: 30px;
+    /* taille des cartes doit etre 146 sinon decale le bas de hebergements */
+    height: 146px;
+}
+
+.populaires-cards a:last-of-type {
+    margin-bottom: 0px;
 }
 
 .populaires-cards .card {
-    display: flex;
-    margin-top: 30px;
-    height: 146px; 
-    /* sinon  l'écart en bas est trop grand */
+    border-top: 5px solid var(--white, #FFF);
+    border-bottom: 5px solid var(--white, #FFF);
+    border-left: 5px solid var(--white, #FFF);
+    width: 100%;
 }
 
 .populaires-cards img {
     width: 33%;
-    height: 146px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 
 .populaires-cards .card-content {
     width: 67%;
-    padding-left: 15px;
+    padding: 10px 5px 5px 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-sizing: border-box;
 }
 
 .populaires-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
-}
-
-.populaires-cards .card-subtitle {
-    margin: 0;
-}
-
-.populaires-cards .card-rating {
+    margin-top: 0px;
     margin-bottom: 5px;
 }
+
+
