@@ -1,40 +1,34 @@
-.activites .activites-cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex:1;
+.activites .section-title {
+    padding-bottom: 30px;
+}
 
+.activites .activites-cards a {
+    color: #000000;
+    text-decoration: none;
+    margin-right: 30px;
+    flex: 298px;
 }
 
 .activites .activites-cards .card {
-    margin-right: 30px;
-    height: 439px;
-    padding: 0;
-    justify-content: center;
-    width : 100%;
+    width: 100%;
 }
 
-.activites .activites-cards .card:last-child {
+.activites .activites-cards a:last-child {
     margin-right: 0px;
-    /* width : 30%% */
 }
 
-.activites .activites-cards .card img{
-width: 100%;
-height: 380px;
-border-radius: 20px 20px 0px 0px;
+.activites .activites-cards .card img {
+    width: 100%;
+    height: 380px;
+    border-radius: 20px 20px 0px 0px;
 }
 
-.activites .activites-cards .card .card-title{
-padding-left: 20px;
-font-size: 16px;
-    }
+.activites .activites-cards .card .card-title {
+    padding: 20px 19px;
+    margin: 0px;
+}
 
-.activites{
+.activites {
     padding: 30px;
     margin: 35px 0px;
-}
-
-.activites .section-title {
-padding-bottom:30px;
 }

@@ -11,7 +11,7 @@
 /* container de l'icone dans la barre de recherche */
 .info .info-search-bar .label {
     background-color: #F2F2F2;
-    height: 49px;
+    /* height: 49px; */
     width: 50px;
     border-radius: 15px 0px 0px 15px;
     border-color: #F2F2F2;
@@ -102,10 +102,3 @@ center element */
     /* pas de self car info n'est pas flex*/
 }
 
-.border-line {
-    border: 1px solid
-}
-
-.bold {
-    font-weight: 700;
-}
