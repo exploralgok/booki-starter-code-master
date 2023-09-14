@@ -1,52 +1,46 @@
-/****** Hebergements et Populaires ***********/
+/****** Hebergements And Populaires ***********/
+.hebergements-and-populaires {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
 
-.accomodation-and-popular section {
+.hebergements-and-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
-    /* prise en comtpe des bordures dans le positionnement */
-    /* box-sizing: border-box; */
-}
-
-
-/* .accomodation{
-        justify-content: space-between;
-        /* pourquoi le flex parent ne s'applique pas sur l'enfant ?
-} */
-
-.accomodation-and-popular a {
-    color: #000000;
-    text-decoration: none;
+    box-sizing: border-box;
 }
 
 /****** Hebergements ***********/
-.accomodation {
+.hebergements {
     width: 65%;
 }
 
-/* ajuster la taille de la carte */
-.hebergements-cards {
+.hebergements .accomodations-cards {
+    display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+
 }
 
-.hebergements-cards a {
+.hebergements .accomodations-cards .simple-link {
     /* chaque  élément de la section doit faire au moins 250px de large */
-    flex: 250px;
+    /* flex: 250px; */
     /* quand je mets dans article il n'enlève pas la dernière marge */
-    margin-right: 30px;
-    margin-bottom: 30px;
+    /* margin-right: 30px; */
+    /* margin-bottom: 30px; */
+    width: 250px;
+    /* width: calc(33.3333333% - 20px); */
 }
 
 /* le dernier élément de chaque ligne doit avoir une marge de zéro */
-.hebergements-cards a:nth-of-type(3n) {
+/* .hebergements .accomodations-cards a:nth-of-type(3n) {
     margin-right: 0;
-}
+} */
 
-.hebergements-cards a:nth-of-type(3n) {
-    margin-right: 0;
-}
-
-.hebergements-cards .card {
+.hebergements .accomodations-cards .card {
     display: flex;
     flex-direction: column;
     /* prend la largeur de mon a */
@@ -55,69 +49,51 @@
 }
 
 /* ajuster la taille de l'image */
-.hebergements-cards img {
-    width: 100%;
+.hebergements .accomodations-cards .card img {
     height: 124px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     margin-bottom: 4px;
-    border: 5px solid #FFFFFF;
-    /* box-sizing: border-box; */
+    border-bottom: 5px solid #FFFFFF;
+    box-sizing: border-box;
 }
 
 /* ajuster l'écart entre les lignes de contenu */
-.hebergements-cards .card-content {
+.hebergements .accomodations-cards .card .card-content {
     padding: 0px 15px 15px 15px;
-
 }
 
 /* apparence du contenu des cartes */
-
-.hebergements-cards .card-title {
+.hebergements .accomodations-cards .card .card-content .card-title {
     margin-top: 0;
     margin-bottom: 8px;
 }
 
-.hebergements-cards .card-subtitle {
+.hebergements .accomodations-cards .card .card-content .card-subtitle {
     margin-bottom: 8px;
+    font-size: 14px;
 }
 
-
-.afficher-plus {
-    font-size: 18px;
-    /* margin-bottom: 0; */
-}
 
 /****** Populaires ***********/
 .populaires {
     width: 32%;
-    margin-left: 40px;
 }
 
 .populaires-title {
+    display: flex;
     justify-content: space-between;
-}
-
-
-.populaires-cards a {
-    margin-bottom: 30px;
-    /* taille des cartes doit etre 146 sinon decale le bas de hebergements */
-    height: 146px;
-}
-
-.populaires-cards a:last-of-type {
-    margin-bottom: 0px;
+    align-items: center;
 }
 
 .populaires-cards .card {
-    border-top: 5px solid var(--white, #FFF);
-    border-bottom: 5px solid var(--white, #FFF);
-    border-left: 5px solid var(--white, #FFF);
-    width: 100%;
+    display: flex;
+    margin-top: 33px;
 }
 
 .populaires-cards img {
     width: 33%;
+    height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -128,11 +104,29 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-sizing: border-box;
+    border-bottom: 5px solid #FFFFFF;
+    border-top: 5px solid #FFFFFF;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+
 }
 
 .populaires-cards .card-title {
-    margin-top: 0px;
-    margin-bottom: 5px;
+    margin: 0;
+    /* margin-top: 10px; */
+    margin-bottom: 4px;
+}
+
+.populaires-cards .card-subtitle {
+    margin: 0;
+    font-size: 14px;
 }
 
 
+.see-more {
+    display: block;
+    font-size: 18px;
+    margin-top: 30px;
+}

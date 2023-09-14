@@ -1,69 +1,33 @@
-/****** Header ***********/
-
-/* aligner les élements de menu en haut à droite
-et le logo au centre à gauche */
-
 .header {
-    /* alignement en ligne des éléments */
-    display: flex;
-    /* repartition logo et nav avec nav à droite */
     justify-content: space-between;
 }
 
-/* redimensionner le logo */
 .header .logo {
-    /* pas besoin de padding à gauche 
-    car il est déjà dans main container */
     padding: 30px 50px 30px 0px;
-    /* on choisit soit width soit height, 
-    l'autre s'ajuste automatiquement */
     height: 19px;
 }
 
-/* supprimer les puces et le retrait à droite des listes
-et aligner les éléments de la liste du menu en ligne */
-.header .menu .liste-lien {
-    list-style-type: none;
-    /* padding right par défaut = 40px */
-    padding: 0;
-    /* en colonne par défaut  */
-    display: flex;
-    /* margin par défaut = 16px*/
-    margin: 0;
-}
-
-/* écart entre les éléments du menu selon le figma */
-.header .menu .liste-lien .lien {
-    /* pour créer l'espace entre le nom du lien et la bordure */
+.header .menu .list-link .link {
     padding-top: 14px;
-    /* pour éviter le décalage lors du survol */
     border-top: solid 2px transparent;
-}
-
-/* au survol, apparition d'un trait bleu */
-.header .menu .liste-lien .lien:hover {
-    border-top: solid 2px #0065FC;
-}
-
-
-/* écart entre les éléments du menu selon le figma */
-.header .menu .liste-lien #lien-hebergement {
-    margin-right: 34px;
-    margin-left: 50px;
-}
-
-/* écart entre les éléments du menu selon le figma */
-.header .menu .liste-lien #lien-activites {
-    margin-left: 34px;
-}
-
-/* supprimer le soulignement et la couleur bleu des liens du menu */
-.header .menu .liste-lien .lien a {
     color: #000000;
     text-decoration: none;
 }
 
-/* au survol, lien en bleu */
-.header .menu .liste-lien .lien a:hover {
+.header .menu .list-link .link:hover {
+    border-top: solid 2px #0065FC;
     color: #0065FC;
+}
+
+.header .menu .list-link .link a {
+    display: flex;
+    height: 100%;
+}
+
+.header .menu .list-link #link-accomodation {
+    margin-left: 50px;
+}
+
+.header .menu .list-link #link-activities {
+    margin-left: 68px;
 }

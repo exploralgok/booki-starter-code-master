@@ -16,25 +16,19 @@
 body {
     display: flex;
     justify-content: center;
-/* supprimer la marge pour que les éléments colle le haut de la page*/
     margin-top: 0;
-}
-
-/* on n'utilise pas les valeurs par défaut dans la page (haut et bas) */
-p{
-    margin: 0;
 }
 
 .main-container {
     width: 100%;
-    /* éviter d’étirer la page web sur la largeur de façon excessive */
     max-width: 1440px;
-    /* En-deçà de cette largeur des versions tablette/mobile seront mises en place ultérieurement */
-    min-width: 1025px;
-/* le header et le footer touchent le bord de la page
-les cotés ont un paadding de 50  */
-    padding: 0px 50px;
+    padding: 0 50px;
     box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .section-title {
@@ -51,18 +45,15 @@ les cotés ont un paadding de 50  */
 
 .card img {
     object-fit: cover;
+    border: 5px solid #FFFFFF;
+
 }
 
 .card-title {
     font-size: 16px;
 }
 
-.card-subtitle {
-    /* pour enlever les marges par défaut du paragraphe */
-    margin: 0;
-    font-size: 14px;
-}
-.euro {
+.bold {
     font-weight: 700;
 }
 
@@ -70,39 +61,40 @@ les cotés ont un paadding de 50  */
     color: var(--main-bg-color)
 }
 
-.margin-l{
-    margin-bottom: 35px;
+.direction-row {
+    display: flex;
 }
 
-.margin-s{
+
+.margin-s {
     margin-bottom: 30px;
 }
 
-.center-element{
-    display: flex;
-    align-items: center;
+
+.list-link {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-.direction-row{
+.margin-l {
+    margin-bottom: 35px;
+}
+
+.center-element {
     display: flex;
+    align-items: center;
 }
 
 .border-line {
     border: 1px solid
 }
 
-.bold {
-    font-weight: 700;
+p {
+    margin: 0;
 }
 
-.direction-column{
-    display: flex;
-    flex-direction: column;
-}
 
-* {
-    box-sizing: border-box;
-}
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -127,7 +119,7 @@ les cotés ont un paadding de 50  */
         justify-content: space-between;
     }
 
-    .populaires-cards .card {
+    .populaires-cards a {
         width: 30%;
     }
 

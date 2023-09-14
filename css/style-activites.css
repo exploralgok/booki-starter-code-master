@@ -1,34 +1,30 @@
-.activites .section-title {
-    padding-bottom: 30px;
+.activities {
+    padding: 30px;
+    margin: 35px 0px;
 }
 
-.activites .activites-cards a {
-    color: #000000;
-    text-decoration: none;
+/* chaque élément doit faire au moins cette taille */
+.activities .activities-cards .simple-link {
     margin-right: 30px;
     flex: 298px;
 }
 
-.activites .activites-cards .card {
-    width: 100%;
-}
-
-.activites .activites-cards a:last-child {
+.activities .activities-cards .simple-link:last-child {
     margin-right: 0px;
 }
 
-.activites .activites-cards .card img {
+.activities .activities-cards .card {
+    width: 100%;
+}
+
+.activities .activities-cards .card img {
     width: 100%;
     height: 380px;
     border-radius: 20px 20px 0px 0px;
+    border: 0;
 }
 
-.activites .activites-cards .card .card-title {
+.activities .activities-cards .card .card-title {
     padding: 20px 19px;
     margin: 0px;
-}
-
-.activites {
-    padding: 30px;
-    margin: 35px 0px;
 }

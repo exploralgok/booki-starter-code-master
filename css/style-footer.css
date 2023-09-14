@@ -1,31 +1,20 @@
-.footer{
+.footer {
     background-color: #F2F2F2;
-    display: flex;
     justify-content: space-between;
 }
 
-.footer ul {
-    list-style-type: none;
-    padding: 0;
-    /* car padding right par défaut = 40px */
-    margin: 0;
-}
-
-/* écart entre les éléments du menu selon le figma */
-.footer li {
-    padding-top: 15px; 
-    /* pour créer l'espace entre le nom du lien et la bordure */
-}
-
-.footer .footer-column{
+.footer .footer-column {
     padding: 20px;
     width: 100%;
 }
 
-.footer .footer-subtitle {
-
+/* suppression de la mise en forme par défaut */
+.footer .footer-column .footer-subtitle {
     font-size: 18px;
-    margin:0;
-
+    margin: 0;
 }
 
+/* écart entre les éléments du menu selon footer */
+.footer li {
+    padding-top: 15px;
+}
