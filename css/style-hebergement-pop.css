@@ -31,8 +31,8 @@
     /* quand je mets dans article il n'enlève pas la dernière marge */
     /* margin-right: 30px; */
     /* margin-bottom: 30px; */
-    width: 250px;
-    /* width: calc(33.3333333% - 20px); */
+    /* width: 250px; */
+    width: calc(33.3333333% - 20px);
 }
 
 /* le dernier élément de chaque ligne doit avoir une marge de zéro */
