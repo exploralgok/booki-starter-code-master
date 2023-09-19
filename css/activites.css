@@ -6,7 +6,7 @@
 /* chaque élément doit faire au moins cette taille */
 .activities .activities-cards .simple-link {
     margin-right: 30px;
-    flex: 298px;
+    width: 25%;
 }
 
 .activities .activities-cards .simple-link:last-child {
