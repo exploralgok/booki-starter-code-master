@@ -26,19 +26,9 @@
 }
 
 .accomodations .accomodations-cards .simple-link {
-    /* chaque  élément de la section doit faire au moins 250px de large */
-    /* flex: 250px; */
-    /* quand je mets dans article il n'enlève pas la dernière marge */
-    /* margin-right: 30px; */
-    /* margin-bottom: 30px; */
-    /* width: 250px; */
     width: calc(33.3333333% - 20px);
 }
 
-/* le dernier élément de chaque ligne doit avoir une marge de zéro */
-/* .accomodations .accomodations-cards a:nth-of-type(3n) {
-    margin-right: 0;
-} */
 
 .accomodations .accomodations-cards .card {
     display: flex;
@@ -115,7 +105,6 @@
 
 .popular-cards .card-title {
     margin: 0;
-    /* margin-top: 10px; */
     margin-bottom: 4px;
 }
 
